@@ -51,7 +51,7 @@ void report(String sndMSG ){
   }
   
   // We now create a URI for the request
-    String url = "/iot/server.php?iotID=" + iotID + "&iotMSG=" + sndMSG + "&iotNotify=" + iotNotify  ;
+    String url = "/iot/server.php?iotID=" + iotID + "&iotMSG=" + sndMSG + "&iotNotify=" + iotNotify  +"&iotSleep=" + sleepMinutes ;
     
   Serial.print("Requesting URL: ");
   Serial.println(url);
